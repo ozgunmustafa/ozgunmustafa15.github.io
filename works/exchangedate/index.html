@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    img {
+        height: 50px;
+        width: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card my-5 bg-dark ">
+                    <div class="card-body">
+                        <div>
+                            <form id="translate-form">
+
+                                <h5 class="card-title text-white">Çevir</h5>
+                                <small class="card-subtitle text-muted">Hangi ülkenin parası hangi tarihte ne kadar
+                                    değerliydi? Görmek istersen öncelikle tarih seç daha sonra dönüştürmek isteidğin
+                                    birimleri seç.</small><br><br>
+
+                                <!-- <textarea name="" class="form-control" id="word" cols="30" rows="10"></textarea> -->
+                                <input type="date" class="form-control" id="currencyDate" placeholder="tarih seç">
+
+                                <div class="row align-items-center justify-content-center">
+
+
+                                    <div class="col-lg-3 col-xs-12 my-2 ">
+                                        <select name="" id="firstCurrency" class="form-control">
+                                            <option value="USD">USD</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="TRY">TRY</option>
+                                            <option value="BGN">BGN</option>
+                                            <option value="PLN">PLN</option>
+                                            <option value="ZAR">ZAR</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-1 my-2 pl-2 col-xs-12 text-center">
+                                        <i class="fas fa-chevron-circle-right fa-2x text-white "></i>
+                                    </div>
+                                    <div class="col-lg-3 col-xs-12 my-2">
+                                        <select name="" id="secondCurrency" class="form-control">
+                                            <option value="USD">USD</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="TRY">TRY</option>
+                                            <option value="BGN">BGN</option>
+                                            <option value="PLN">PLN</option>
+                                            <option value="ZAR">ZAR</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-5 col-xs-12  my-2">
+                                        <input type="number" name="" id="amount" class="form-control" value="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+
+                        <div class="card" id="result">
+                            <div class="card-body">
+                                <h4 id="outputFirst" class="card-title text-info float-left"></h4>
+                                <h4 class="card-title text-info text-muted float-left mx-2"> - </h4>
+                                <h4 id="outputSecond" class="card-title text-info "></h4>
+                                <h5 id="outputAmount" class="card-title float-left text-danger ">  </h5>
+                                <h5 class="card-title text-info text-muted float-left mx-2"> - </h5>
+                                <h5 id="outputResult" class="card-title text-danger ">  </h5>
+                                <small id="outputDate" class="card-title text-muted"></small>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ui.js"></script>
+    <script src="currency.js"></script>
+    <script src="app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
