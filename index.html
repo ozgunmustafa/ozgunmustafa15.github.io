@@ -1,13 +1,11 @@
 <html>
 
 <head>
-    <title>Title</title>
+    <title>Mustafa Özgün</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/uikit.min.css" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168718062-1"></script>
-<script>
+	<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -32,20 +30,9 @@
         <div class="uk-navbar-left uk-navbar-center">
 
             <ul class="uk-navbar-nav">
-                <li class=""><a href="#card-about">Hakkımda</a></li>
-                <!--
-            <li>
-                <a href="#">Parent</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </li> -->
-                <li><a href="#card-works">Çalışmalarım</a></li>
-                <li><a href="#card-contact">İletişim</a></li>
+                <li class=""><a href="#about">Hakkımda</a></li>
+                <li><a href="#works">Çalışmalarım</a></li>
+                <li><a href="#contact">İletişim</a></li>
 
             </ul>
 
@@ -54,60 +41,39 @@
 
 
     <div class="uk-container">
-        <div class="uk-card uk-box-shadow-small" id="card-about">
+        <div class="uk-card uk-box-shadow-small" id="about">
             <div class="uk-card-body">
                 <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-1@s uk-text-center  " uk-grid>
                     <div class="uk-text-center ">
                         <img style="border-radius: 100%; width: 250px;height: 250px;"
-                            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+                            src="./images/profil.jpeg"
                             class="uk-padding-medium uk-box-shadow-large " alt="">
                     </div>
                     <div>
                         <h2>Mustafa Özgün</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati eius, asperiores maxime
-                            earum
-                            veritatis iure eveniet iusto praesentium cumque, deserunt dolorem hic repellendus veniam
-                            nostrum,
-                            soluta voluptas natus totam temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cum, architecto ducimus quae sint eos animi voluptatibus est. Fuga, tempore at
-                            eligendi dignissimos ullam vel? Laborum autem officia nesciunt at doloremque! Lorem ipsum
-                            dolor sit amet consectetur, adipisicing elit. Repellendus, laudantium quae, nemo, voluptatem
-                            consequuntur quibusdam dolorem reprehenderit unde qui aliquam velit quo dolores. Voluptates
-                            unde quos veritatis, aut reiciendis distinctio! </p>
+                        <p class="uk-padding-small">
+                            Selam, ben Mustafa. Yazılım geliştiricisiyim. Pamukkale Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. Sanat, teknoloji ve tasarım konularına meraklıyım. Sosyal hayatımdan bahsedecek olursam kitap okumaktan, müzik dinlemekten, tiyatro metinleri okumaktan ve tiyatro oyunları seyretmekten keyif alırım. Yeni  şeyler keşfetmekten hoşlanırım. Bu bir müzik olabilir, bir mekan olabilir veya daha önce tatmadığım bir lezzet olabilir. Yenilikleri denemekten keyif alırım yani.
+                        </p>
+                        <small><a href="https://www.youtube.com/watch?v=Ew_yAxw4VhM">Şarkıya Git</a></small>
                         <br>
-
                     </div>
-
                 </div>
             </div>
         </div>
         <br>
         <br>
-
-
-        <div uk-slider="center: true">
+        <div uk-slider="center: true" id="works">
             <h3>Çalışmalarım</h3>
-
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
                 <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-
-
-                  
                     <li>
                         <div class="uk-card uk-card-default">
                             <div class=" uk-card-media-top  " >
                                 <img src="images/hizliresim1.png" class=""  alt="">
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">Hizliresim.com</h3>
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                                <div uk-lightbox>
-                                    <a class="uk-button uk-background-primary"
-                                        href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
-                                        data-caption="YouTube">Video</a>
-                                </div>
+                                <h3 class="uk-card-title">Hızlıresim</h3>
+                                <p style="font-size: 14px;">Popüler resim yükleme sitelerinden olan <b>hizliresim.com</b> sitesinin backend kısmının kodlamasını Laravel çatısını kullanarak gerçekleştirdim. Admin panelini sıfırdan oluşturup, resimlerin filtrelenmesini sağladım. Bu proje ile büyük verilerle çalışma ve API konusunda tecrübe kazandım. Bunun dışında sitenin tasarımında da ufak tefek değişiklikler yaptım. </p>
                             </div>
                         </div>
                     </li>
@@ -117,15 +83,8 @@
                                 <img src="images/paukampus1.png" alt="">
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">PauKampus</h3>
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
+                                <h3 class="uk-card-title">Paü Kampüs</h3>
+                                <p style="font-size: 14px;">Internette Pazarlama dersi için geliştirdiğim bu proje kullanıcılar, sisteme notlarını yükleyerek kazanç elde edebilmektedir. Makul fiyatlara notların satıldığı bu platformda not bulamayan kişilerin de kolayca not bulabilmesini sağlamak amaçlanmıştır. Sitenin header ve footer dışındaki alanlarının tasarımının tamamını ve backend kısmının kodlanmasını Laravel çatısını kullanarak gerçekleştirdim. <br>Platformu detaylı incelemek isterseniz <b>paukampus.com</b> üzerinden veya aşağıdaki video linkinden inceleyebilirsiniz.</p>
                                 <div uk-lightbox>
                                     <a class="uk-button uk-background-primary"
                                         href="https://www.youtube.com/watch?v=AoMAUy8_R_c"
@@ -141,18 +100,8 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">Questations</h3>
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                <p style="font-size: 14px;">Lisans tezim için geliştirdiğim bu projeyle konferans salonlarında, konuşmacılarla, katılımcıları dijital ortamda, bir oda aracılığıyla buluşturmak amaçlanmıştır. Katılımcıların sorularını konuşmacının oluşturduğu odaya dahil olarak, konuşmacıya iletebildiği bu platform ile konferansların daha dinamik olması amaçlanmıştır. </p>
 
-                                    incididunt.</p>
-                                <div uk-lightbox>
-                                    <a class="uk-button uk-background-primary"
-                                        href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
-                                        data-caption="YouTube">Video</a>
-                                </div>
                             </div>
                         </div>
                     </li>
@@ -163,21 +112,11 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">Github</h3>
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-
-                                    incididunt.</p>
-                                <div uk-lightbox>
-                                    <a class="uk-button uk-background-primary"
-                                        href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
-                                        data-caption="YouTube">Video</a>
-                                </div>
+                                <p style="font-size: 14px;">Kendi çapımda yaptığım ufak tefek github projelerime Github hesabımdan erişebilirsiniz.</p>
                             </div>
                         </div>
                     </li>
-                  
+
                 </ul>
 
                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
@@ -186,145 +125,12 @@
                     uk-slider-item="next"></a>
 
             </div>
-
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- 
-
-
-
-        <div class="uk-card-body" id="card-works">
-            <h2>Çalışmalarım</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. O unde quos veritatis, aut reiciendis
-                distinctio! </p>
-            <br>
-            <br>
-            <div uk-slider="center: true">
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid" style="padding-left: 10px!important;">
-                        <li>
-                            <div class="uk-card uk-card-default  uk-animation-scale-up uk-transform-origin-top-center"
-                                style="min-height: 500px!important;">
-
-                                <div class=" uk-card-body" style="padding: 20px 20px;">
-                                    <img src="images/hizliresim.png" class="uk-padding-small uk-align-center" alt="">
-
-                                    <h3 class="uk-card-title">Hizliresim.com</h3>
-                                    <p style="font-size: 14px;">Lorem ipsum Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Porro accusantium quas necessitatibus aliquid laudantium
-                                        doloribus nam quam sapiente? Quidem cumque exercitationem laborum odio,
-                                        voluptatibus ab accusantium ad repudiandae voluptate distinctio. dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-card uk-card-default  uk-animation-scale-up uk-transform-origin-top-center">
-
-                                <div class=" uk-card-body" style="padding: 20px 20px;">
-
-                                    <iframe
-                                        src="https://www.youtube.com/embed/AoMAUy8_R_c?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                                        width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive
-                                        uk-video="automute: true"></iframe>
-
-                                    <h3 class="uk-card-title">Questations</h3>
-                                    <p style="font-size: 14px;">Lorem ipsum Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Porro accusantium quas necessitatibus aliquid laudantium
-                                        doloribus nam quam sapiente? Quidem cumque exercitationem laborum odio,
-                                        voluptatibus ab accusantium ad repudiandae voluptate distinctio. dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="uk-card uk-card-default  uk-animation-scale-up uk-transform-origin-top-center"
-                                style="min-height: 500px!important;">
-
-
-                                <div class=" uk-card-body" style="padding: 20px 20px;">
-
-                                    <img src="images/paukampus.png" class="uk-padding-small uk-align-center" alt="">
-
-                                    <h3 class="uk-card-title">PauKampüs</h3>
-                                    <p style="font-size: 14px;">Lorem ipsum Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Porro accusantium quas necessitatibus aliquid laudantium
-                                        doloribus nam quam sapiente? Quidem cumque exercitationem laborum odio,
-                                        voluptatibus ab accusantium ad repudiandae voluptate distinctio. dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
-                                </div>
-                            </div>
-                        <li>
-                            <div class="uk-card uk-card-default  uk-animation-scale-up uk-transform-origin-top-center"
-                                style="min-height: 500px!important;">
-
-
-                                <div class=" uk-card-body" style="padding: 20px 20px;">
-                                    <img src="images/github.png" class="uk-padding-small uk-align-center" alt="">
-
-                                    <h3 class="uk-card-title">Github</h3>
-                                    <p style="font-size: 14px;">Lorem ipsum Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Porro accusantium quas necessitatibus aliquid laudantium
-                                        doloribus nam quam sapiente? Quidem cumque exercitationem laborum odio,
-                                        voluptatibus ab accusantium ad repudiandae voluptate distinctio. dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                    </ul>
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                        uk-slider-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                        uk-slider-item="next"></a>
-
-                </div>
-
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-            </div>
-        </div> -->
-
-
         <div class="uk-card-body uk-box-shadow-small uk-padding-large">
             <h3>Beceri</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati eius, asperiores maxime
-                unde quos veritatis, aut reiciendis distinctio! </p>
             <br>
             <div class="uk-position-relative  uk-visible-toggle uk-light" tabindex="-1" uk-slider>
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m"
@@ -334,60 +140,58 @@
                     </li>
 
                     <li >
-                        <img class="uk-box-shadow-small img-knowledge" src="images/laravel.png" alt="">
+                        <img class="uk-box-shadow-small img-knowledge" src="images/laravel.png" alt="laravel">
                     </li>
                     <li>
-                        <img class="uk-box-shadow-small img-knowledge" src="images/bootstrap.png" alt="">
+                        <img class="uk-box-shadow-small img-knowledge" src="images/bootstrap.png" alt="bootstrap">
                     </li>
                     <li>
 
-                        <img class="uk-box-shadow-small img-knowledge" src="images/js.png" alt="">
+                        <img class="uk-box-shadow-small img-knowledge" src="images/js.png" alt="javascript">
                     </li>
 
                     <li>
-                        <img class="uk-box-shadow-small img-knowledge" src="images/css.png" alt="">
+                        <img class="uk-box-shadow-small img-knowledge" src="images/css.png" alt="css">
                     </li>
 
                     <li>
-                        <img class="uk-box-shadow-small img-knowledge" src="images/html.png" alt="">
+                        <img class="uk-box-shadow-small img-knowledge" src="images/html.png" alt="html">
                     </li>
-
                 </ul>
+
                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
                     uk-slider-item="previous"></a>
                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
                     uk-slider-item="next"></a>
-
             </div>
         </div>
         <br>
 
-        <div class="uk-card uk-box-shadow-small uk-padding-large" id="card-contact">
+        <div class="uk-card uk-box-shadow-small uk-padding-large" id="contact">
             <div class="uk-card-body ">
                 <h3>İletişim</h3>
                 <br>
-
                 <div class="uk-child-width-expand@l" uk-grid>
 
                     <div>
-                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin"></a>
+                        <a href="https://www.linkedin.com/in/ozgunmustafa/" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin"></a>
                         linkedin
                     </div>
                     <div>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="github"></a>
+                        <a href="https://github.com/ozgunmustafa" class="uk-icon-button  uk-margin-small-right" uk-icon="github"></a>
                         github
                     </div>
                     <div>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="mail"></a>
+                        <a href="mailto:mustiozgun@gmail.com" class="uk-icon-button  uk-margin-small-right" uk-icon="mail"></a>
                         email
                     </div>
                     <div>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="https://www.instagram.com/ozzgunmustafa/" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
                         instagram
                     </div>
                     <div>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a>
-                        twitter
+                        <a href="https://wa.me/905073861125" class="uk-icon-button  uk-margin-small-right" uk-icon="whatsapp"></a>
+                        whatsapp
                     </div>
                 </div>
             </div>
